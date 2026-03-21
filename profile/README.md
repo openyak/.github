@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/openyak/.github/main/profile/assets/logo-dark.png" alt="OpenYak" width="120" />
+<img src="https://raw.githubusercontent.com/openyak/.github/main/profile/assets/mascot.png" alt="OpenYak" width="200" />
 
 # OpenYak
 
