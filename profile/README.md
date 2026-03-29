@@ -6,7 +6,7 @@
 
 **Yak is all you need.**
 
-Your local AI agent — private, powerful, remote-ready.
+Your desktop AI agent — private, powerful, personal.
 
 [Website](https://open-yak.com) &nbsp;|&nbsp; [Download](https://open-yak.com/download) &nbsp;|&nbsp; [Pricing](https://open-yak.com/pricing) &nbsp;|&nbsp; [Changelog](https://open-yak.com/changelog)
 
@@ -14,58 +14,39 @@ Your local AI agent — private, powerful, remote-ready.
 
 ---
 
-OpenYak is an open-source desktop AI agent that brings Claude Code-like agentic capabilities to 100+ models. It runs entirely on your machine — your files, your data, your control.
+OpenYak is an open-source desktop AI agent that keeps your data on your machine. Connect to 100+ cloud models, run open-source models locally through Ollama, or use your ChatGPT subscription — your choice. Manage files, analyze data, draft documents, and automate workflows without uploading anything to the cloud.
 
-Built for people who do real work with documents, spreadsheets, and local files, not just chat.
+Built with Tauri 2, Next.js 15, and FastAPI — for people who do real work with documents, spreadsheets, and local files.
 
-### What it does
+### Highlights
 
-- **Agentic Workflows** — Multi-step tool calling with up to 3 layers of sub-agent nesting. It plans, executes, and self-corrects.
-- **20+ Built-in Tools** — File read/write/edit, bash execution, glob/grep search, web fetch, artifact rendering, todo management, and more.
-- **100+ AI Models** — Access Claude, GPT-4, Gemini, Llama, Mistral and others via OpenRouter. Or bring your own API key.
-- **Local-First Privacy** — No cloud storage, no telemetry. Every conversation stays on your machine.
-- **Artifact System** — Create and preview React, HTML, SVG, and Mermaid diagrams inline with version history.
-- **Remote Access** — Expose your local AI over a secure Cloudflare tunnel, scan a QR code, and continue from your phone.
+- 🔒 **Local-First** — Files, conversations, and memory stay on your device. No cloud storage, no telemetry.
+- 🤖 **100+ Models** — Claude Opus 4.6, GPT-4.1, Gemini 3 Flash, DeepSeek V3.2, Llama, Qwen, and more via OpenRouter, 20+ BYOK providers, or fully local with [Ollama](https://ollama.com).
+- 💬 **ChatGPT Subscription** — Already paying for ChatGPT? Connect it directly — no extra API costs.
+- 🛠️ **20+ Built-in Tools** — File read/write/edit, bash, glob/grep, web fetch/search, code execution, artifact rendering, long-term memory, scheduled tasks, and more.
+- 🧠 **7 Agent Modes** — Specialized agents for building, planning, exploring — with multi-step tool calling and sub-agent nesting.
+- 💬 **IM Integration** — Connect WhatsApp, Discord, Telegram, Slack, Feishu, Signal, iMessage through OpenClaw.
+- 📱 **Remote Access** — Start on desktop, continue on your phone via secure Cloudflare tunnel with QR code.
+- ⏰ **Automations** — Cron-based scheduled tasks. Daily digests, weekly reports, automated cleanup.
+- 🔌 **MCP Connectors** — Integrate external tools via Model Context Protocol.
+- 🎨 **Artifacts** — Create and preview React, HTML, SVG, Mermaid, and PowerPoint inline with version history.
 
-### Use cases
+### Use Cases
 
 | Scenario | Example |
 |----------|---------|
-| **Office Automation** | "Rename and organize all invoices in my Downloads folder by date and vendor." |
-| **Data Analysis** | "Parse these 12 Excel files, find anomalies, and export a summary report." |
+| **Office Automation** | "Rename and organize all invoices in Downloads by date and vendor." |
+| **Data Analysis** | "Parse these 12 Excel files, find anomalies, and export a summary." |
 | **Content & Writing** | "Turn my meeting notes into a polished status update email." |
 | **Team Operations** | "Merge these PDFs and CSVs into a weekly brief with action items." |
-| **Remote Workflows** | "Start on desktop, continue from my phone via secure tunnel." |
+| **IM Integration** | "Summarize unread Telegram messages and draft replies." |
+| **Automations** | "Every Monday at 9am, generate a digest from my project folder." |
 
-### Tech stack
+### Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | Next.js 15, React 19, TypeScript, Tailwind CSS 4, shadcn/ui |
+| Frontend | Next.js 15, React 19, TypeScript, Tailwind CSS, MUI, Radix UI |
 | Backend | Python 3.12+, FastAPI, SQLAlchemy 2.0, SQLite WAL |
 | Desktop | Tauri 2 (Rust) |
-| LLM | OpenRouter, OpenAI-compatible providers |
-
-### Get started
-
-```bash
-# Download the installer from the website
-# or build from source:
-git clone https://github.com/openyak/desktop.git
-cd desktop
-npm run dev:all
-```
-
-Free tier includes 1M tokens/week. No account required for BYOK mode.
-
-### License
-
-Desktop app is licensed under [AGPL-3.0](https://github.com/openyak/desktop/blob/main/LICENSE).
-
----
-
-<div align="center">
-
-**[Download OpenYak](https://open-yak.com/download)** &nbsp;&nbsp; — &nbsp;&nbsp; From install to impact in minutes.
-
-</div>
+| LLM | OpenRouter, Ollama, 20+ OpenAI-compatible providers |
